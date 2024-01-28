@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root{
+  --brand-color: #0F9AFE;
+  --dark-10: #293145;
+  --dark-20: #6E7275;
+  --dark-30: #DBDBDB;
+  --dark-40: #FFFFFF;
+  --blue-ground: #EFF8FF;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Sora', sans-serif;
+}
+
+
+/* HEADER MENU*/
+header{
+  height: 70px;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img{
+  padding: 0 20px;
+}
+.menu ul{
+  display: flex;
+  list-style: none;
+}
+.menu a{
+  padding: 0 20px;  
+  text-decoration: none;
+  color: var(--dark-10);
+  transition: .4s;
+}
+.menu a:hover{
+  color: var(--brand-color);
+}
+/* HEADER MENU MOBILE*/
+.menu-mobile{
+  display: none;
+}
+
+/*HERO*/
+.hero{
+  height: 640px;
+  background-color: var(--blue-ground);
+  display: flex;
+  align-items: center;
+}
+.hero-content{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-side-hero{
+  font-size: 1.5rem;
+  color: #293145;
+  padding: 0 0 0 50px;
+}
+.left-side-hero button{
+  padding: .8rem 4rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--brand-color);
+  color: var(--dark-40);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .4s;
+}
+.left-side-hero button:hover{
+  opacity: .6;
+}
+.right-side-hero img{
+  width: 100%;
+  max-width: 500px;
+}
+
+/*FUNCIONALIDADES*/
+.fun-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+.fun-content h2{
+  font-size: 2rem;
+  color: var(--dark-10);
+  margin: 0 0 4rem 0;
+}
+.fun-cards{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.fun-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .7rem;
+}
+.fun-card p{
+  text-align: center;
+}
+
+/*APP*/
+.app{
+  background-color: var(--blue-ground);
+  padding: 40px 20px;
+}
+.app-content{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-left-side h2{
+  font-size: 1.7rem;
+  color: var(--dark-10);
+}
+.app-left-side p{
+  margin: 1rem 0;
+  font-size: .9rem;
+  color: var(--dark-20);
+}
+.app-left-images{
+  display: flex;
+  gap: .6rem;
+}
+.app-left-images img{
+  max-width: 140px;
+  width: 100%;
+}
+.app-right-side img{
+  max-width: 500px;
+  width: 100%;
+}
+
+/*PLANOS*/
+.planos-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.planos-content h2{
+  font-size: 2rem;
+  color: var(--dark-10);
+}
+.planos-content .subtitle{
+  margin: .5rem 0 2rem 0;
+  color: var(--dark-20);
+  font-size: .8rem;
+  text-align: center;
+}
+.planos-cards{
+  display: flex;
+  gap: 2rem;
+}
+.plano-card{
+  background-color: var(--blue-ground);
+  max-width: 370px;
+  height: 471px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  border-radius: 10px;
+}
+.plano-card .preco{
+  position: relative;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.plano-card .real{
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.plano-card .mes{
+  font-weight: 400;
+  font-size: 1rem;
+}
+.plano-card .plano-desc{
+  text-align: center;
+  margin: 0 0 4rem 0;
+}
+.plano-card button{
+  padding: .7rem 4rem;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--brand-color);
+  color: var(--dark-40);
+  font-size: .9rem;
+  cursor: pointer;
+  transition: .4s;
+}
+.plano-card button:hover{
+  opacity: .6;
+}
+.prata{
+  background-color: var(--dark-10);
+  color: var(--dark-40);
+}
+.prata h3{
+  font-size: 1.5rem;
+}
+.prata .preferido-prata{
+  padding: .3rem 2rem;
+  background-color: var(--brand-color);
+  font-size: .7rem;
+  margin-top: .3rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+/*CONTATO*/
+#contato{
+  background-image: url("./images/desktop.png");
+  background-size: cover;
+  background-position: center bottom;
+  height: 383px;
+  color: var(--dark-40);
+}
+.contato-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem;
+}
+.contato-content h1{
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.contato-content span{
+  color: var(--dark-20);
+  text-align: center;
+  font-size: .8rem;
+  margin: .2rem 0 6rem 0;
+}
+.contato-content input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--dark-40);
+  padding: .5rem .2rem;
+  margin-right: 1rem;
+}
+.contato-content form button{
+  padding: .5rem 2rem;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--brand-color);
+  color: var(--dark-40);
+  transition: .3s;
+  cursor: pointer;
+}
+
+/*FOOTER*/
+footer{
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  /*HERO*/
+  .left-side-hero{
+    font-size: 1rem;
+  }
+  .right-side-hero img{
+    max-height: 400px;
+  }
+
+  /*PLANOS*/
+  .planos-cards{
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  /*HEADER*/
+  header{
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .menu{
+    display: none;
+  }
+  .menu-mobile{
+    display: block;
+  }
+  /*HERO*/
+  .hero-content{
+    align-items: start;
+    justify-content: center;
+    padding: 10px 40px;
+    flex-direction: column;
+  }
+  .left-side-hero{
+    font-size: 1rem;
+  }
+  .right-side-hero img{
+    max-height: 400px;
+  }
+
+  /*FUNCIONALIDADE*/
+  .fun-cards{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /*APP*/
+  .app-content{
+    align-items: center;
+    justify-content: center;
+  }
+  .app-left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .app-left-images img{
+    max-width: 100px;
+    width: 100%;
+  }
+  .app-left-side p{
+    text-align: center;
+    font-size: .8rem;
+  }
+  .app-left-side h2{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .app-right-side{
+    display: none;
+  }
+
+
+}
+
+
+@media (max-width: 400px){
+  .app-left-side p{
+    font-size: .7rem;
+  }
+}
